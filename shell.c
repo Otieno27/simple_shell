@@ -1,14 +1,19 @@
 #include "shell.h"
 
+int main(void) {
+    char command[120];
 
-int main(void)
-{
-        char str;
+    while (true) {
+        display_prompt();
+        read_command(command, sizeof(command));
+        execute_command(command);
+    }
 
-        while(true) {
-                output_print();
-        }
 
-        return 0;
+
+
+
+
+
+    return 0;
 }
-

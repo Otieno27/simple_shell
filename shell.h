@@ -8,7 +8,7 @@
 #include <stdbool.h>
 
 void user_input(char *str, size_t script);
-void ouput_print(void);
+void display_prompt(void);
 void attain(const char *str);
 void output(const char *message);
 

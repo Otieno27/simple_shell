@@ -3,14 +3,14 @@
 void user_input(char *str, size_t script){
         if(fgets(str, script,stdin) == NULL){
                 if(feof(stdin)) {
-                        output("\n");
+                        display("\n");
                         exit(EXIT_SUCCESS);
                 }
                 else{
-                        output("Invalid input!\n");
+                        display("Invalid input!\n");
                         exit(EXIT_FAILURE);
                 }
         }
-        //str[strcspn(str, "\n")] = '\0'; for removing newline
+        str[strcspn(str, "\n")] = '\0'; for removing newline
 }
 
